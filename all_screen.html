@@ -17,95 +17,28 @@
   <title>Title</title>
 </head>
 <body>
-
-   <div class="cd-demo cd-demo-container cd-demo-max-width-xs cd-demo-padding-y-xl js-cd-demo lk_block">  
     
- <header class="header position-relative js-header ">
-  <div class="m-0 p-0 w-100 header__container mt-0 mb-0 container max-width-lg">
-    <div class="header__logo">
-      <a href="#0">
-        <img src="assets/img/SizzeLogo.svg" alt="" class="nav-logo">
-      </a>
+    
+<div class="off-canvas off-canvas--full-width js-off-canvas">
+  <main class="off-canvas__main">
+    <!-- insert your main content here -->
+    <div class="container text-center margin-top-xl">
+      <button aria-controls="off-canvas-1" class="btn--color btn btn--primary">All screens</button>
     </div>
+  </main>
 
-    <button class="btn btn--subtle header__trigger js-header__trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
-      <i class="header__trigger-icon" aria-hidden="true"></i>
-      <span>Menu</span>
-    </button>
-
-    <nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
-      <div class="header__nav-inner">
-        <div class="header__label">Main menu</div>
-        <ul class="header__list">
-          <li class="header__item"><a href="#0" class="header__link">Log in</a></li>
-          <li class="header__item"><a href="#0" class="header__link" aria-current="page">Sing Up</a></li>
-          <li class="header__item header__item--divider" aria-hidden="true"></li>
-          <li class="header__item"><a href="#0" class="btn btn--primary btn--betta">Betta</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>   
-    
-    
-    <div class="mt-5 filter-nav filter-nav--expanded js-filter-nav">
-  <button class="reset btn btn--subtle is-hidden js-filter-nav__control" aria-label="Select a filter option" aria-controls="filter-nav">
-    <span class="js-filter-nav__placeholder" aria-hidden="true">Project</span>
-
-    <svg class="icon icon--xxs margin-left-xxs" aria-hidden="true" viewBox="0 0 12 12"><polyline points="0.5 3.5 6 9.5 11.5 3.5" fill="none" stroke-width="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
-  </button>
-
-  <div class="filter-nav__wrapper js-filter-nav__wrapper" id="filter-nav">
-    <nav class="filter-nav__nav justify-center js-filter-nav__nav">
-      <ul class="filter-nav__list js-filter-nav__list" aria-controls="product-gallery">
-        <li class="filter-nav__item">
-          <button class="reset filter-nav__btn js-filter-nav__btn js-tab-focus" aria-current="true" data-filter="*">Project</button>
-        </li>
-        
-        <li class="filter-nav__item">
-          <button class="reset filter-nav__btn js-filter-nav__btn js-tab-focus" data-filter="coffee-mugs">Account Settigs</button>
-        </li>
-      
-        <li class="filter-nav__item">
-          <button class="reset filter-nav__btn js-filter-nav__btn js-tab-focus" data-filter="tea-mugs">Plan</button>
-        </li>
-      <li class="filter-nav__marker js-filter-nav__marker" aria-hidden="true"></li>
-      </ul>
-
-      <button class="reset filter-nav__close-btn is-hidden js-filter-nav__close-btn js-tab-focus" aria-label="Close navigation">
-        <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><g stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="13.5" y1="2.5" x2="2.5" y2="13.5"></line><line x1="2.5" y1="2.5" x2="13.5" y2="13.5"></line></g></svg>
-      </button>
-    </nav>
-  </div>
-</div>
-    
-    
-       
-    </div>
-       <div class="cd-demo cd-demo-container cd-demo-max-width-xs cd-demo-padding-y-xl js-cd-demo lk_block">     
-        <h1 class="poject_title">Projects</h1>
-        
-        
-        <div class="new_project">
-        
-        <button href="create_project.html" class="btn btn--primary btn--preserve-width new_project_button">
-  <span class="btn__content-a"></span>
-
-  <span class="btn__content-b">
-    <svg class="icon icon--is-spinning" aria-hidden="true" viewBox="0 0 16 16"><title>Loading</title><g stroke-width="1" fill="currentColor" stroke="currentColor"><path d="M.5,8a7.5,7.5,0,1,1,1.91,5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
-  </span>
-</button>
-            
-        </div>
-        
-    
+  <div id="off-canvas-1" class="off-canvas__panel js-off-canvas__panel" aria-labelledby="off-canvas__title" role="complementary">
+    <div class="off-canvas__content padding-y-lg padding-x-md">
+      <!-- insert your secondary content here -->
+      <div class="container max-width-md text-component">
+   
     <ul class="grid-auto-md gap-sm">
 
     
         
         
         
-          <li>
+          <li class="l-none">
       <div class="card card--is-link">
   <a class="card__link d-flex justify-content-between align-items-center" href="#0" aria-label="Description of the link ">
     <figure class="card__img">
@@ -122,7 +55,7 @@
         
         
         
-        <h4 class="flex_h4">Title of the Card       </h4> 
+        <h4 class="flex_h4">Title of the screen       </h4> 
         
         </div>
         
@@ -130,8 +63,20 @@
         <button class="btn btn--primary else-button" aria-controls="menu-example1"></button>
   
 <menu id="menu-example1" class="menu js-menu display_normal">
+  <li role="menuitem">
+      
+       <a href="#0" class="menu__content js-menu__content">
+    <span class="p-0 menu__content js-menu__content">
+     <svg class="mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24 / grid / stack">
+<path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M20 5V16C21.1046 16 22 15.1046 22 14V4C22 2.89543 21.1046 2 20 2H10C8.89543 2 8 2.89543 8 4H19C19.5523 4 20 4.44772 20 5ZM17 19V8C17 7.44772 16.5523 7 16 7H5C5 5.89543 5.89543 5 7 5H17C18.1046 5 19 5.89543 19 7V17C19 18.1046 18.1046 19 17 19ZM14 8H4C2.89543 8 2 8.89543 2 10V20C2 21.1046 2.89543 22 4 22H14C15.1046 22 16 21.1046 16 20V10C16 8.89543 15.1046 8 14 8ZM4 20V10H14V20H4Z" fill="black"/>
+</g>
+</svg>
 
-    
+      <span>Duplicate</span>
+    </span>
+      </a>
+  </li>
       
 
   <li role="menuitem">
@@ -144,7 +89,7 @@
 </g>
 </svg>
 
-      <span>Download card</span>
+      <span>Download Screen</span>
     </span>
       </a>
   </li>
@@ -211,7 +156,7 @@
         
         
         
-          <li>
+          <li class="l-none">
       <div class="card card--is-link">
   <a class="card__link d-flex justify-content-between align-items-center" href="#0" aria-label="Description of the link ">
     <figure class="card__img">
@@ -228,7 +173,7 @@
         
         
         
-        <h4 class="flex_h4">Title of the Card       </h4> 
+        <h4 class="flex_h4">Title of the screen       </h4> 
         
         </div>
         
@@ -236,7 +181,20 @@
         <button class="btn btn--primary else-button" aria-controls="menu-example2"></button>
   
 <menu id="menu-example2" class="menu js-menu display_normal">
-    
+      <li role="menuitem">
+      
+       <a href="#0" class="menu__content js-menu__content">
+    <span class="p-0 menu__content js-menu__content">
+     <svg class="mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24 / grid / stack">
+<path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M20 5V16C21.1046 16 22 15.1046 22 14V4C22 2.89543 21.1046 2 20 2H10C8.89543 2 8 2.89543 8 4H19C19.5523 4 20 4.44772 20 5ZM17 19V8C17 7.44772 16.5523 7 16 7H5C5 5.89543 5.89543 5 7 5H17C18.1046 5 19 5.89543 19 7V17C19 18.1046 18.1046 19 17 19ZM14 8H4C2.89543 8 2 8.89543 2 10V20C2 21.1046 2.89543 22 4 22H14C15.1046 22 16 21.1046 16 20V10C16 8.89543 15.1046 8 14 8ZM4 20V10H14V20H4Z" fill="black"/>
+</g>
+</svg>
+
+      <span>Duplicate</span>
+    </span>
+      </a>
+  </li>
       
 
   <li role="menuitem">
@@ -249,7 +207,7 @@
 </g>
 </svg>
 
-      <span>Download card</span>
+      <span>Download Screen</span>
     </span>
       </a>
   </li>
@@ -309,7 +267,7 @@
       </div>
   </a>
 </div></li>
-          <li>
+          <li class="l-none">
       <div class="card card--is-link">
   <a class="card__link d-flex justify-content-between align-items-center" href="#0" aria-label="Description of the link ">
     <figure class="card__img">
@@ -326,7 +284,7 @@
         
         
         
-        <h4 class="flex_h4">Title of the Card       </h4> 
+        <h4 class="flex_h4">Title of the screen       </h4> 
         
         </div>
         
@@ -334,7 +292,20 @@
         <button class="btn btn--primary else-button" aria-controls="menu-example3"></button>
   
 <menu id="menu-example3" class="menu js-menu">
-    
+      <li role="menuitem">
+      
+       <a href="#0" class="menu__content js-menu__content">
+    <span class="p-0 menu__content js-menu__content">
+     <svg class="mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24 / grid / stack">
+<path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M20 5V16C21.1046 16 22 15.1046 22 14V4C22 2.89543 21.1046 2 20 2H10C8.89543 2 8 2.89543 8 4H19C19.5523 4 20 4.44772 20 5ZM17 19V8C17 7.44772 16.5523 7 16 7H5C5 5.89543 5.89543 5 7 5H17C18.1046 5 19 5.89543 19 7V17C19 18.1046 18.1046 19 17 19ZM14 8H4C2.89543 8 2 8.89543 2 10V20C2 21.1046 2.89543 22 4 22H14C15.1046 22 16 21.1046 16 20V10C16 8.89543 15.1046 8 14 8ZM4 20V10H14V20H4Z" fill="black"/>
+</g>
+</svg>
+
+      <span>Duplicate</span>
+    </span>
+      </a>
+  </li>
       
 
   <li role="menuitem">
@@ -347,7 +318,7 @@
 </g>
 </svg>
 
-      <span>Download card</span>
+      <span>Download Screen</span>
     </span>
       </a>
   </li>
@@ -407,7 +378,7 @@
       </div>
   </a>
 </div></li>
-          <li>
+          <li class="l-none">
       <div class="card card--is-link">
   <a class="card__link d-flex justify-content-between align-items-center" href="#0" aria-label="Description of the link ">
     <figure class="card__img">
@@ -424,7 +395,7 @@
         
         
         
-        <h4 class="flex_h4">Title of the Card       </h4> 
+        <h4 class="flex_h4">Title of the screen       </h4> 
         
         </div>
         
@@ -432,7 +403,20 @@
         <button class="btn btn--primary else-button" aria-controls="menu-example4"></button>
   
 <menu id="menu-example4" class="menu js-menu">
-    
+      <li role="menuitem">
+      
+       <a href="#0" class="menu__content js-menu__content">
+    <span class="p-0 menu__content js-menu__content">
+     <svg class="mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24 / grid / stack">
+<path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M20 5V16C21.1046 16 22 15.1046 22 14V4C22 2.89543 21.1046 2 20 2H10C8.89543 2 8 2.89543 8 4H19C19.5523 4 20 4.44772 20 5ZM17 19V8C17 7.44772 16.5523 7 16 7H5C5 5.89543 5.89543 5 7 5H17C18.1046 5 19 5.89543 19 7V17C19 18.1046 18.1046 19 17 19ZM14 8H4C2.89543 8 2 8.89543 2 10V20C2 21.1046 2.89543 22 4 22H14C15.1046 22 16 21.1046 16 20V10C16 8.89543 15.1046 8 14 8ZM4 20V10H14V20H4Z" fill="black"/>
+</g>
+</svg>
+
+      <span>Duplicate</span>
+    </span>
+      </a>
+  </li>
       
 
   <li role="menuitem">
@@ -445,7 +429,7 @@
 </g>
 </svg>
 
-      <span>Download card</span>
+      <span>Download Screen</span>
     </span>
       </a>
   </li>
@@ -505,7 +489,7 @@
       </div>
   </a>
 </div></li>
-          <li>
+          <li class="l-none">
       <div class="card card--is-link">
   <a class="card__link d-flex justify-content-between align-items-center" href="#0" aria-label="Description of the link ">
     <figure class="card__img">
@@ -522,7 +506,7 @@
         
         
         
-        <h4 class="flex_h4">Title of the Card       </h4> 
+        <h4 class="flex_h4">Title of the screen       </h4> 
         
         </div>
         
@@ -530,7 +514,20 @@
         <button class="btn btn--primary else-button" aria-controls="menu-example5"></button>
   
 <menu id="menu-example5" class="menu js-menu">
+      <li role="menuitem">
+      
+       <a href="#0" class="menu__content js-menu__content">
+    <span class="p-0 menu__content js-menu__content">
+     <svg class="mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24 / grid / stack">
+<path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M20 5V16C21.1046 16 22 15.1046 22 14V4C22 2.89543 21.1046 2 20 2H10C8.89543 2 8 2.89543 8 4H19C19.5523 4 20 4.44772 20 5ZM17 19V8C17 7.44772 16.5523 7 16 7H5C5 5.89543 5.89543 5 7 5H17C18.1046 5 19 5.89543 19 7V17C19 18.1046 18.1046 19 17 19ZM14 8H4C2.89543 8 2 8.89543 2 10V20C2 21.1046 2.89543 22 4 22H14C15.1046 22 16 21.1046 16 20V10C16 8.89543 15.1046 8 14 8ZM4 20V10H14V20H4Z" fill="black"/>
+</g>
+</svg>
 
+      <span>Duplicate</span>
+    </span>
+      </a>
+  </li>
       
 
   <li role="menuitem">
@@ -543,7 +540,7 @@
 </g>
 </svg>
 
-      <span>Download card</span>
+      <span>Download Screen</span>
     </span>
       </a>
   </li>
@@ -608,10 +605,25 @@
         
         
 </ul>
+      </div>
     </div>
+
+    <button class="reset off-canvas__close-btn js-off-canvas__close-btn">
+      <svg class="icon" viewBox="0 0 16 16"><title>Close panel</title><g stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="13.5" y1="2.5" x2="2.5" y2="13.5"></line><line x1="2.5" y1="2.5" x2="13.5" y2="13.5"></line></g></svg>
+    </button>
+  </div>
+</div>
     
     
     
+    
+    
+    
+    
+    
+    
+
+
    
     
     
